@@ -140,6 +140,4 @@ public class ImprovedList implements List<T> {
     public List<T> subList(int fromIndex, int toIndex) {
         return null;
     }
-
-    private
 }
