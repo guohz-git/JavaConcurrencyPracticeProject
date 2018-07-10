@@ -27,7 +27,7 @@ public class TravelCompany {
      * @return
      */
     public TravelQuote solicitQuote(TravelInfo travelInfo) throws InterruptedException {
-        //模拟耗时
+        //模拟耗时 ， 此处模拟超出执行获取时间 2000 ， future将会超时
         Thread.sleep(4000);
         if("南京".equalsIgnoreCase(travelInfo.getDestination())){
             return new TravelQuote(travelInfo.getDays(),travelInfo.getDays()*travelInfo.getNums()*200);

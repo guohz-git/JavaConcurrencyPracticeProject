@@ -1,5 +1,9 @@
 package chapter6.CompletionRenderPage;
 
+/**
+ * 优先级队列元素，优先出列下载完成的图片异步任务
+ * @param <V>
+ */
 public class QueueFuture<V> implements Comparable{
 
     private final QueueingFutureTask<V> future;

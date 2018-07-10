@@ -1,5 +1,8 @@
 package chapter6.travel;
 
+/**
+ * 公司返回报价信息
+ */
 public class TravelQuote {
 
     private int days;

@@ -1,5 +1,8 @@
 package chapter6.travel;
 
+/**
+ * 客户旅游信息
+ */
 public class TravelInfo {
 
     private String startPlace;
