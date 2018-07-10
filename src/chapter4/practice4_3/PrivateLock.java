@@ -9,9 +9,9 @@ package chapter4.practice4_3;
 public class PrivateLock {
     private final Object myLock = new Object();
 
-    void someMethod() {
-        synchronized (myLock) {
-            //访问或修改Widget状态
-        }
-    }
+//    void someMethod() {
+//        synchronized (myLock) {
+//            //访问或修改Widget状态
+//        }
+//    }
 }

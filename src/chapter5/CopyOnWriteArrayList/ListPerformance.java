@@ -15,7 +15,7 @@ public class ListPerformance {
     private static class TestThread implements  Runnable{
         private static long totalTime;
         private final int No;
-        private final int loop = 100000;
+        private static final int loop = 100000;
         private final Thread t;
         private final List<Integer> list;
         private CountDownLatch countDownLatch;

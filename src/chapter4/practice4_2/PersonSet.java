@@ -22,6 +22,6 @@ public class PersonSet {
     }
 
 
-    class Person {
+   static class Person {
     }
 }
