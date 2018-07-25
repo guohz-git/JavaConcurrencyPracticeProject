@@ -10,8 +10,12 @@ public class ReentrantLockDemo {
         Lock lock  = new ReentrantLock();
 
         try{
-            lock.tryLock(1000,TimeUnit.MILLISECONDS);
-            System.out.println("处理业务逻辑");
+            boolean b = lock.tryLock(1000, TimeUnit.MILLISECONDS);
+            if(b){
+                System.out.println("处理业务逻辑");
+            }else{
+                System.out.println("获取锁时间超时");
+            }
         } catch (InterruptedException e) {
             System.out.println("获取锁中断");
             e.printStackTrace();

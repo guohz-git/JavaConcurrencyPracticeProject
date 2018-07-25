@@ -64,7 +64,7 @@ public class ListPerformance {
 
     public void initList(List<Integer> list, int size) {
         for (int i = 0; i < size; i++) {
-            list.add(new Integer(i));
+            list.add(i);
         }
     }
 
