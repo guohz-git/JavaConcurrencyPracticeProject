@@ -16,6 +16,7 @@ public class GrumpyBoundBuffer<V> extends BaseBoundedBuffer<V> {
         if(isEmpty()){
             throw new BufferEmptyException();
         }
+
         return doTake();
     }
 
